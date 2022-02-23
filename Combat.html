@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combat</title>
+</head>
+<body>
+
+<article>
+
+  <h1 id="guide-contents">Combat Guide</h1>
+  <p>This guide contains the following calculations/formulas. If you are looking for battalion/gambit related calculations, take a look at the Battalions Guide.</p>
+  <h2 id="attack">Attack</h2>
+  <p>Attack represents how much damage a unit will do to an enemy with no Protection/Resilience. The Attack (Atk) value depends on the Might (Mt) of the weapon/spell and the Strength (Str) or Magic (Mag) of the attacking unit, depending on if its a physical or magic attack. Combat arts can increase the Might of the weapon used. Battalion bonuses, abilities like Swordfaire, and strongly bonded linked attacks will also factor in. The formula for Atk is the following.</p>
+  <h2 id="protection-and-resilience">Protection and Resilience</h2>
+  <p>Protection (Prt) and Resilience (Rsl) represent how well a unit can withstand physical and magic attacks respectively. Prt is based on Defense (Def), and Rsl is based on Resistance (Res). Battalions and equipment can modify these values. Terrain can also increase these values.</p>
+  <h2 id="damage-per-attack">Damage Per Attack</h2>
+  <p>The damage dealt per attack is calculated by subtracting the target's Prt or Rsl from the attacker's Atk, depending on whether its a physical or magic attack. The formula for damage dealt per attack is the following.</p>
+  <p>If a battalion is equipped, it will lose endurance equal to half of the damage taken during battle rounded down. Hence, battalions will only lose endurance if the unit takes 2 or more damage (4 if Defensive Tactics is equipped). Out-of-battle damage such as Poison Strike does not affect battalion endurance.</p>
+  <h2 id="effective-damage">Effective Damage</h2>
+  <p>Some weapons and spells are effective against certain types of units. For example, Dark Spikes T is effective against cavalry, which famously allows Lysithea to kill the Death Knight. Effective damage triples the might of the weapon being used. There are also combat arts such as Knightkneeler that provide effective damage, this will double the might of the weapon used. If you happen to use both at the same time (for example Knightkneeler with a Horseslayer against a cavalry enemy), you will get triple might of the weapon and the regular combat art boost. Battalions bonuses, strongly bonded linked attacks, etc. will take their normal effect.</p>
+  <p>The following formulas show the calculations for effective damage from a weapon (Horseslayer), effective damage from a combat art (Knightkneeler), and effective damage from both (Knightkneeler with Horseslayer).</p>
+  <h2 id="attack-speed">Attack Speed</h2>
+  <p>Attack Speed (AS) represents how fast a unit can attack. If a unit has 4 or more AS than the unit they are attacking, then they will double hit (quadruple hit for brave weapons and gauntlets). The base value for AS is the unit's speed stat. Weapon and equipment weight will decrease this value. Every 5 points of strength will mitigate 1 point of weapon/equipment weight. Hence, the formula for AS is the following.</p>
+  <p>Note: the (Wtwp+Wteq−⌊Str5⌋)(Wtwp+Wteq−⌊Str5⌋) part has a minimum of 00, meaning no matter how much strength a unit has they will never have more ASAS than their SpdSpd.</p>
+  <h2 id="hit">Hit</h2>
+  <p>The hit rate is calculated based on the weapon/spell's hit, as well as the unit's Dex. For magic attacks, Lck will also affect the hit rate. Abilities such as Hit +20, battalion bonuses, combat arts, and equipment can also increase the hit.</p>
+  <p>The hit for a physical attack is calculated as follows.</p>
+  <p>Magic-based attacks calculate hit rate differently. This includes spells, magic weapons, and magic combat arts. If a magic combat art is used with a physical weapon, the physical hit rate formula (above) is used instead. The hit rate for magic-based attacks is calculated as follows.</p>
+  <h2 id="avoid">Avoid</h2>
+  <p>Avoid (Avo) represents how well a unit can dodge an attack. The base formula for Avo is the same as the formula for AS, except equipment, abilities such as Avo +10, and battalions can increase it. Terrain such a forest and thicket tiles can also increase avoid. The formula for Avo is as follows.</p>
+  <p>Magic-based attacks will also alter the Avo of the enemy. All spells, magic weapons, and magic combat arts (even when using a physical weapon) will target this altered Magic Avo, which is different from the Avo displayed in game. Terrain Avoid bonuses will not affect Magic Avo. The formula for Magic Avo is as follows.</p>
+  <h2 id="displayed-hit">Displayed Hit</h2>
+  <p>Displayed hit is what the game tells you the hit rate is when a unit attacks a target. Simply put, it is the attacker's Hit minus the defender's Avo. This is not a percentage chance. Three Houses uses True Hit, meaning that it will roll 2 RNs to see whether or not an attack will hit. In general, this means that hit rates above 50 will hit more often than the number would suggest, and hit rates below 50 will hit less often.</p>
+  <h2 id="crit">Crit</h2>
+  <p>Crit represents how likely it is for a unit to land a critical hit, which does triple damage. The Crit depends on the Crit value for a weapon/spell, Dex, and Lck. This can be increased by combat arts, equipment, battalions, and abilities such as Sword Crit +10. The formula for Crit is the following.</p>
+  <h2 id="crit-avoid">Crit Avoid</h2>
+  <p>Crit Avoid represents how well a unit can avoid enemy critical hits. The initial value is equal to unit's Lck, but this can change if the attacker engages with a Combat Art. Note that the Combat Arts's Avo bonus will also increase Crit Avo by the same amount. The formula for Crit Avo is the following.</p>
+  <h2 id="displayed-crit">Displayed Crit</h2>
+  <p>Similar to Displayed Hit, Displayed Crit is calculated by subtracting the attacker's Crit by the defender's Crit Avo. Unlike Displayed Hit, Displayed Crit is an actual percentage chance and is rolled with 1 RN. The formula for Displayed Crit is the following.</p>
+
+</article>
+  
+</body>
+</html>
