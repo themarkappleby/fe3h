@@ -1,0 +1,70 @@
+{
+  -- Single button to "activate" stairs, altars, portals, shops and hatches.
+  -- If items are present, grab them, otherwise wait one turn.
+  function action()
+    local feature = view.feature_at(0, 0)
+    local items = {}
+    local things = items.get_items_at(0, 0)
+    if things then
+      for index,thing in ipairs(things)
+      do
+        if thing.is_corpse == false then
+          table.insert(items, thing)
+        end
+      end
+    end
+    if table.getn(items) > 0 then
+      crawl.sendkeys('g')
+    elseif string.find(feature, "stairs_down_") then
+      crawl.sendkeys('>')
+    elseif string.find(feature, "hatch_down_") then
+      crawl.sendkeys('>')
+    elseif string.find(feature, "enter_") then
+      crawl.sendkeys('>')
+    elseif string.find(feature, "altar_") then
+      crawl.sendkeys('>')
+    elseif string.find(feature, "stairs_up_") then
+      crawl.sendkeys('<')
+    elseif string.find(feature, "hatch_up_") then
+      crawl.sendkeys('<')
+    elseif string.find(feature, "exit_") then
+      crawl.sendkeys('<')
+    elseif string.find(feature, "return_") then
+      crawl.sendkeys('<')
+    else
+      crawl.sendkeys('.')
+    end
+  end
+
+  function getMonsterList()
+    local monsters = {}
+    for x = -7,7 do
+      for y = -7,7 do
+        m = monster.get_monster_at(x, y)
+        local attitude_hostile = 0
+        if m and (m:attitude() == attitude_hostile) and not (m:is_firewood()) then
+          desc = m:desc()
+          if (monsters[desc] == nil) then
+            monsters[desc] = 1
+          else
+            monsters[desc] = monsters[desc] + 1
+          end
+        end
+      end
+    end
+    return monsters
+  end
+
+  -- If enemy in LOS then auto-attack, otherwise auto-explore
+  function auto() 
+    local first_monster = next(getMonsterList())
+    if (first_monster) then
+      crawl.sendkeys('\9')
+    else
+      crawl.sendkeys('o')
+    end
+  end
+}
+
+macros += M z ===auto
+macros += M x ===action
