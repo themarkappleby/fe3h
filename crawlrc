@@ -3,17 +3,17 @@
   -- If items are present, grab them, otherwise wait one turn.
   function action()
     local feature = view.feature_at(0, 0)
-    local items = {}
+    local realItems = {}
     local things = items.get_items_at(0, 0)
     if things then
       for index,thing in ipairs(things)
       do
-        if thing.is_corpse == false then
-          table.insert(items, thing)
+        if thing.has_skeleton == false then
+          table.insert(realItems, thing)
         end
       end
     end
-    if table.getn(items) > 0 then
+    if table.getn(realItems) > 0 then
       crawl.sendkeys('g')
     elseif string.find(feature, "stairs_down_") then
       crawl.sendkeys('>')
