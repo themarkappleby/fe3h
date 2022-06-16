@@ -41,127 +41,127 @@ default_manual_training = true
 
 # Autoinscribe armour
 # ----------
-autoinscribe +=  \+[0-9] robe:2 ac
-autoinscribe +=  \+[0-9] animal skin:2 ac
-autoinscribe +=  \+[0-9] leather armour:3 ac
-autoinscribe +=  \+[0-9] troll leather armour:4 ac
-autoinscribe +=  \+[0-9] ring mail:5 ac
-autoinscribe +=  \+[0-9] steam dragon scales:5 ac
-autoinscribe +=  \+[0-9] scale mail:6 ac
-autoinscribe +=  \+[0-9] acid dragon scales:6 ac
-autoinscribe +=  \+[0-9] swamp dragon scales:7 ac
-autoinscribe +=  \+[0-9] chain mail:8 ac
-autoinscribe +=  \+[0-9] fire dragon scales:8 ac
-autoinscribe +=  \+[0-9] ice dragon scales:9 ac
-autoinscribe +=  \+[0-9] quicksilver dragon scales:9 ac
-autoinscribe +=  \+[0-9] plate armour:10 ac
-autoinscribe +=  \+[0-9] pearl dragon scales:10 ac
-autoinscribe +=  \+[0-9] shadow dragon scales:10 ac
-autoinscribe +=  \+[0-9] storm dragon scales:10 ac
-autoinscribe +=  \+[0-9] gold scales:12 ac
-autoinscribe +=  \+[0-9] crystal plate armour:14 ac
+autoinscribe +=  \+[0-9] robe:ac 2
+autoinscribe +=  \+[0-9] animal skin:ac 2
+autoinscribe +=  \+[0-9] leather armour:ac 3
+autoinscribe +=  \+[0-9] troll leather armour:ac 4
+autoinscribe +=  \+[0-9] ring mail:ac 5
+autoinscribe +=  \+[0-9] steam dragon scales:ac 5
+autoinscribe +=  \+[0-9] scale mail:ac 6
+autoinscribe +=  \+[0-9] acid dragon scales:ac 6
+autoinscribe +=  \+[0-9] swamp dragon scales:ac 7
+autoinscribe +=  \+[0-9] chain mail:ac 8
+autoinscribe +=  \+[0-9] fire dragon scales:ac 8
+autoinscribe +=  \+[0-9] ice dragon scales:ac 9
+autoinscribe +=  \+[0-9] quicksilver dragon scales:ac 9
+autoinscribe +=  \+[0-9] plate armour:ac 10
+autoinscribe +=  \+[0-9] pearl dragon scales:ac 10
+autoinscribe +=  \+[0-9] shadow dragon scales:ac 10
+autoinscribe +=  \+[0-9] storm dragon scales:ac 10
+autoinscribe +=  \+[0-9] gold scales:ac 12
+autoinscribe +=  \+[0-9] crystal plate armour:ac 14
 
 # Autoinscribe shields
 # ----------
-autoinscribe +=  \+[0-9] buckler:3 sh
-autoinscribe +=  \+[0-9] kite shield:8 sh
-autoinscribe +=  \+[0-9] tower shield:13 sh
+autoinscribe +=  \+[0-9] buckler:sh 3
+autoinscribe +=  \+[0-9] kite shield:sh 8
+autoinscribe +=  \+[0-9] tower shield:sh 13
 
 # Autoinscribe headgear
 # ----------
-autoinscribe +=  \+[0-9] helmet:1 ac
-autoinscribe +=  \+[0-9] hat:0 ac
+autoinscribe +=  \+[0-9] helmet:ac 1
+autoinscribe +=  \+[0-9] hat:ac 0
 
 # Autoinscribe misc
 # ----------
-autoinscribe +=  \+[0-9] pair of boots:1 ac
-autoinscribe +=  \+[0-9] cloak:1 ac
-autoinscribe +=  \+[0-9] scarf:0 ac
-autoinscribe +=  \+[0-9] gloves:1 ac
-autoinscribe +=  \+[0-9] barding:4 ac
+autoinscribe +=  \+[0-9] pair of boots:ac 1
+autoinscribe +=  \+[0-9] cloak:ac 1
+autoinscribe +=  \+[0-9] scarf:ac 0
+autoinscribe +=  \+[0-9] gloves:ac 1
+autoinscribe +=  \+[0-9] barding:ac 4
 
 # Autoinscribe short blades
 # ----------
-autoinscribe +=  \+[0-9] dagger:4 dmg
-autoinscribe +=  \+[0-9] quick blade:5 dmg
-autoinscribe +=  \+[0-9] short sword:6 dmg
-autoinscribe +=  \+[0-9] rapier:8 dmg
+autoinscribe +=  \+[0-9] dagger:dmg 4
+autoinscribe +=  \+[0-9] quick blade:dmg 5
+autoinscribe +=  \+[0-9] short sword:dmg 6
+autoinscribe +=  \+[0-9] rapier:dmg 8
 
 # Autoinscribe long blades
 # ----------
-autoinscribe +=  \+[0-9] falchion:7 dmg
-autoinscribe +=  \+[0-9] long sword:9 dmg
-autoinscribe +=  \+[0-9] scimitar:11 dmg
-autoinscribe +=  \+[0-9] demon blade:12 dmg
-autoinscribe +=  \+[0-9] eudemon blade:13 dmg
-autoinscribe +=  \+[0-9] double sword:14 dmg
-autoinscribe +=  \+[0-9] great sword:15 dmg
-autoinscribe +=  \+[0-9] triple sword:17 dmg
+autoinscribe +=  \+[0-9] falchion:dmg 7
+autoinscribe +=  \+[0-9] long sword:dmg 9
+autoinscribe +=  \+[0-9] scimitar:dmg 11
+autoinscribe +=  \+[0-9] demon blade:dmg 12
+autoinscribe +=  \+[0-9] eudemon blade:dmg 13
+autoinscribe +=  \+[0-9] double sword:dmg 14
+autoinscribe +=  \+[0-9] great sword:dmg 15
+autoinscribe +=  \+[0-9] triple sword:dmg 17
 
 # Autoinscribe axes
 # ----------
-autoinscribe +=  \+[0-9] hand axe:7 dmg
-autoinscribe +=  \+[0-9] war axe:11 dmg
-autoinscribe +=  \+[0-9] broad axe:13 dmg
-autoinscribe +=  \+[0-9] battleaxe:15 dmg
-autoinscribe +=  \+[0-9] executioner:18 dmg
+autoinscribe +=  \+[0-9] hand axe:dmg 7
+autoinscribe +=  \+[0-9] war axe:dmg 11
+autoinscribe +=  \+[0-9] broad axe:dmg 13
+autoinscribe +=  \+[0-9] battleaxe:dmg 15
+autoinscribe +=  \+[0-9] executioner:dmg 18
 
 # Autoinscribe maces & flails
 # ----------
-autoinscribe +=  \+[0-9] club:5 dmg
-autoinscribe +=  \+[0-9] whip:6 dmg
-autoinscribe +=  \+[0-9] mace:8 dmg
-autoinscribe +=  \+[0-9] flail:10 dmg
-autoinscribe +=  \+[0-9] morningstar:13 dmg
-autoinscribe +=  \+[0-9] demon whip:11 dmg
-autoinscribe +=  \+[0-9] sacred scourge:12 dmg
-autoinscribe +=  \+[0-9] dire flail:13 dmg
-autoinscribe +=  \+[0-9] eveningstar:15 dmg
-autoinscribe +=  \+[0-9] great mace:17 dmg
-autoinscribe +=  \+[0-9] giant club:20 dmg
-autoinscribe +=  \+[0-9] giant spiked club:22 dmg
+autoinscribe +=  \+[0-9] club:dmg 5
+autoinscribe +=  \+[0-9] whip:dmg 6
+autoinscribe +=  \+[0-9] mace:dmg 8
+autoinscribe +=  \+[0-9] flail:dmg 10
+autoinscribe +=  \+[0-9] morningstar:dmg 13
+autoinscribe +=  \+[0-9] demon whip:dmg 11
+autoinscribe +=  \+[0-9] sacred scourge:dmg 12
+autoinscribe +=  \+[0-9] dire flail:dmg 13
+autoinscribe +=  \+[0-9] eveningstar:dmg 15
+autoinscribe +=  \+[0-9] great mace:dmg 17
+autoinscribe +=  \+[0-9] giant club:dmg 20
+autoinscribe +=  \+[0-9] giant spiked club:dmg 22
 
 # Autoinscribe polearms
 # ----------
-autoinscribe +=  \+[0-9] spear:6 dmg
-autoinscribe +=  \+[0-9] trident:9 dmg
-autoinscribe +=  \+[0-9] halberd:13 dmg
-autoinscribe +=  \+[0-9] scythe:14 dmg
-autoinscribe +=  \+[0-9] demon trident:12 dmg
-autoinscribe +=  \+[0-9] trishula:13 dmg
-autoinscribe +=  \+[0-9] glaive:15 dmg
-autoinscribe +=  \+[0-9] bardiche:18 dmg
+autoinscribe +=  \+[0-9] spear:dmg 6
+autoinscribe +=  \+[0-9] trident:dmg 9
+autoinscribe +=  \+[0-9] halberd:dmg 13
+autoinscribe +=  \+[0-9] scythe:dmg 14
+autoinscribe +=  \+[0-9] demon trident:dmg 12
+autoinscribe +=  \+[0-9] trishula:dmg 13
+autoinscribe +=  \+[0-9] glaive:dmg 15
+autoinscribe +=  \+[0-9] bardiche:dmg 18
 
 # Autoinscribe staves
 # ----------
-autoinscribe +=  \+[0-9] staff:5 dmg
-autoinscribe +=  \+[0-9] quaterstaff:10 dmg
-autoinscribe +=  \+[0-9] lajatang:16 dmg
+autoinscribe +=  \+[0-9] staff:dmg 5
+autoinscribe +=  \+[0-9] quaterstaff:dmg 10
+autoinscribe +=  \+[0-9] lajatang:dmg 16
 
 # Autoinscribe throwing
 # ----------
-autoinscribe +=  dart:0 dmg
-autoinscribe +=  throwing net:0 dmg
-autoinscribe +=  stone:2 dmg
-autoinscribe +=  boomerang:6 dmg
-autoinscribe +=  javelin:10 dmg
-autoinscribe +=  large rock:20 dmg
+autoinscribe +=  dart:dmg 0
+autoinscribe +=  throwing net:dmg 0
+autoinscribe +=  stone:dmg 2
+autoinscribe +=  boomerang:dmg 6
+autoinscribe +=  javelin:dmg 10
+autoinscribe +=  large rock:dmg 20
 
 # Autoinscribe slings
 # ----------
-autoinscribe +=  \+[0-9] hunting sling:5 dmg
-autoinscribe +=  \+[0-9] fustibalus:8 dmg
+autoinscribe +=  \+[0-9] hunting sling:dmg 5
+autoinscribe +=  \+[0-9] fustibalus:dmg 8
 
 # Autoinscribe bows
 # ----------
-autoinscribe +=  \+[0-9] shortbow:9 dmg
-autoinscribe +=  \+[0-9] longbow:15 dmg
+autoinscribe +=  \+[0-9] shortbow:dmg 9
+autoinscribe +=  \+[0-9] longbow:dmg 15
 
 # Autoinscribe crossbows
 # ----------
-autoinscribe +=  \+[0-9] hand crossbow:12 dmg
-autoinscribe +=  \+[0-9] arbalest:18 dmg
-autoinscribe +=  \+[0-9] triple crossbow:22 dmg
+autoinscribe +=  \+[0-9] hand crossbow:dmg 12
+autoinscribe +=  \+[0-9] arbalest:dmg 18
+autoinscribe +=  \+[0-9] triple crossbow:dmg 22
 
 # Macros
 # ----------
