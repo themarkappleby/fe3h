@@ -154,8 +154,8 @@ autoinscribe +=  \+[0-9] fustibalus:8 dmg
 
 # Autoinscribe bows
 # ----------
-autoinscribe +=  \+[0-9] short bow:9 dmg
-autoinscribe +=  \+[0-9] long bow:15 dmg
+autoinscribe +=  \+[0-9] shortbow:9 dmg
+autoinscribe +=  \+[0-9] longbow:15 dmg
 
 # Autoinscribe crossbows
 # ----------
@@ -197,12 +197,11 @@ macros += M \{-1073741891} \{16}
 
 # F11 (sidebar on Android, second largest tap target)
 macros += M \{-1073741892} ===action
-macros += K1 \{-1073741892} \{13}
 
 # F12
 macros += M \{-1073741893} \{-1073741892}
 
-# ctrl-p (message area on Android, largest tap target)
+# ctrl-p (messages on Android, largest tap target)
 macros += M \{16} ===auto
 
 macros += M ~ r
@@ -227,6 +226,7 @@ macros += M + G
 
 macros += M 0 y
 macros += K 0 \{13}
+macros += K1 0 \{13}
 macros += K2 0 \{13}
 macros += K3 0 \{13}
 macros += K4 0 \{13}
