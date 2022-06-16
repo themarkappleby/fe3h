@@ -1,0 +1,298 @@
+# Pre-game settings
+# ----------
+tile_skip_title = true
+remember_name = false
+# species = random
+# background = random
+# weapon = random
+
+# Display settings
+# ----------
+tile_font_msg_size = 18
+tile_font_crt_size = 12
+msg_min_height = 9
+msg_max_height = 9
+tile_show_threat_levels = trivial, easy, tough, nasty
+tile_filter_scaling = false
+tile_viewport_scale = 1.1
+tile_map_scale = 0.6
+
+# Travel settings
+# ----------
+travel_delay = -1
+show_travel_trail = true
+autopickup = $?!+"/}
+autopickup_exceptions = <stone, <artefact, <wand
+explore_stop = items,shops,altars,portals,branches,runed_doors
+explore_stop += greedy_pickup_smart,greedy_visited_item_stack
+runrest_ignore_message ^= it creaks loudly
+
+# Fight settings
+# ----------
+autofight_throw = true
+auto_switch = true
+
+# QoL settings
+# ----------
+easy_confirm = all
+show_more = false
+force_more_message = aaa
+default_manual_training = true
+
+# Autoinscribe armour
+# ----------
+autoinscribe +=  \+[0-9] robe:2 ac
+autoinscribe +=  \+[0-9] animal skin:2 ac
+autoinscribe +=  \+[0-9] leather armour:3 ac
+autoinscribe +=  \+[0-9] troll leather armour:4 ac
+autoinscribe +=  \+[0-9] ring mail:5 ac
+autoinscribe +=  \+[0-9] steam dragon scales:5 ac
+autoinscribe +=  \+[0-9] scale mail:6 ac
+autoinscribe +=  \+[0-9] acid dragon scales:6 ac
+autoinscribe +=  \+[0-9] swamp dragon scales:7 ac
+autoinscribe +=  \+[0-9] chain mail:8 ac
+autoinscribe +=  \+[0-9] fire dragon scales:8 ac
+autoinscribe +=  \+[0-9] ice dragon scales:9 ac
+autoinscribe +=  \+[0-9] quicksilver dragon scales:9 ac
+autoinscribe +=  \+[0-9] plate armour:10 ac
+autoinscribe +=  \+[0-9] pearl dragon scales:10 ac
+autoinscribe +=  \+[0-9] shadow dragon scales:10 ac
+autoinscribe +=  \+[0-9] storm dragon scales:10 ac
+autoinscribe +=  \+[0-9] gold scales:12 ac
+autoinscribe +=  \+[0-9] crystal plate armour:14 ac
+
+# Autoinscribe shields
+# ----------
+autoinscribe +=  \+[0-9] buckler:3 sh
+autoinscribe +=  \+[0-9] kite shield:8 sh
+autoinscribe +=  \+[0-9] tower shield:13 sh
+
+# Autoinscribe headgear
+# ----------
+autoinscribe +=  \+[0-9] helmet:1 ac
+autoinscribe +=  \+[0-9] hat:0 ac
+
+# Autoinscribe misc
+# ----------
+autoinscribe +=  \+[0-9] pair of boots:1 ac
+autoinscribe +=  \+[0-9] cloak:1 ac
+autoinscribe +=  \+[0-9] scarf:0 ac
+autoinscribe +=  \+[0-9] gloves:1 ac
+autoinscribe +=  \+[0-9] barding:4 ac
+
+# Autoinscribe short blades
+# ----------
+autoinscribe +=  \+[0-9] dagger:4 dmg
+autoinscribe +=  \+[0-9] quick blade:5 dmg
+autoinscribe +=  \+[0-9] short sword:6 dmg
+autoinscribe +=  \+[0-9] rapier:8 dmg
+
+# Autoinscribe long blades
+# ----------
+autoinscribe +=  \+[0-9] falchion:7 dmg
+autoinscribe +=  \+[0-9] long sword:9 dmg
+autoinscribe +=  \+[0-9] scimitar:11 dmg
+autoinscribe +=  \+[0-9] demon blade:12 dmg
+autoinscribe +=  \+[0-9] eudemon blade:13 dmg
+autoinscribe +=  \+[0-9] double sword:14 dmg
+autoinscribe +=  \+[0-9] great sword:15 dmg
+autoinscribe +=  \+[0-9] triple sword:17 dmg
+
+# Autoinscribe axes
+# ----------
+autoinscribe +=  \+[0-9] hand axe:7 dmg
+autoinscribe +=  \+[0-9] war axe:11 dmg
+autoinscribe +=  \+[0-9] broad axe:13 dmg
+autoinscribe +=  \+[0-9] battleaxe:15 dmg
+autoinscribe +=  \+[0-9] executioner:18 dmg
+
+# Autoinscribe maces & flails
+# ----------
+autoinscribe +=  \+[0-9] club:5 dmg
+autoinscribe +=  \+[0-9] whip:6 dmg
+autoinscribe +=  \+[0-9] mace:8 dmg
+autoinscribe +=  \+[0-9] flail:10 dmg
+autoinscribe +=  \+[0-9] morningstar:13 dmg
+autoinscribe +=  \+[0-9] demon whip:11 dmg
+autoinscribe +=  \+[0-9] sacred scourge:12 dmg
+autoinscribe +=  \+[0-9] dire flail:13 dmg
+autoinscribe +=  \+[0-9] eveningstar:15 dmg
+autoinscribe +=  \+[0-9] great mace:17 dmg
+autoinscribe +=  \+[0-9] giant club:20 dmg
+autoinscribe +=  \+[0-9] giant spiked club:22 dmg
+
+# Autoinscribe polearms
+# ----------
+autoinscribe +=  \+[0-9] spear:6 dmg
+autoinscribe +=  \+[0-9] trident:9 dmg
+autoinscribe +=  \+[0-9] halberd:13 dmg
+autoinscribe +=  \+[0-9] scythe:14 dmg
+autoinscribe +=  \+[0-9] demon trident:12 dmg
+autoinscribe +=  \+[0-9] trishula:13 dmg
+autoinscribe +=  \+[0-9] glaive:15 dmg
+autoinscribe +=  \+[0-9] bardiche:18 dmg
+
+# Autoinscribe staves
+# ----------
+autoinscribe +=  \+[0-9] staff:5 dmg
+autoinscribe +=  \+[0-9] quaterstaff:10 dmg
+autoinscribe +=  \+[0-9] lajatang:16 dmg
+
+# Autoinscribe throwing
+# ----------
+autoinscribe +=  dart:0 dmg
+autoinscribe +=  throwing net:0 dmg
+autoinscribe +=  stone:2 dmg
+autoinscribe +=  boomerang:6 dmg
+autoinscribe +=  javelin:10 dmg
+autoinscribe +=  large rock:20 dmg
+
+# Autoinscribe slings
+# ----------
+autoinscribe +=  \+[0-9] hunting sling:5 dmg
+autoinscribe +=  \+[0-9] fustibalus:8 dmg
+
+# Autoinscribe bows
+# ----------
+autoinscribe +=  \+[0-9] shortbow:9 dmg
+autoinscribe +=  \+[0-9] longbow:15 dmg
+
+# Autoinscribe crossbows
+# ----------
+autoinscribe +=  \+[0-9] hand crossbow:12 dmg
+autoinscribe +=  \+[0-9] arbalest:18 dmg
+autoinscribe +=  \+[0-9] triple crossbow:22 dmg
+
+# Macros
+# ----------
+# F1
+macros += M \{-1073741882} za\{13}
+
+# F2
+macros += M \{-1073741883} zb\{13}
+
+# F3
+macros += M \{-1073741884} z*
+
+# F4
+macros += M \{-1073741885} aa\{13}
+
+# F5
+macros += M \{-1073741886} ab\{13}
+
+# F6
+macros += M \{-1073741887} a
+
+# F7
+macros += M \{-1073741888} I
+
+# F8
+macros += M \{-1073741889} M
+
+# F9
+macros += M \{-1073741890} ^
+
+# F10
+macros += M \{-1073741891} \{16}
+
+# F11 (sidebar on Android, second largest tap target)
+macros += M \{-1073741892} ===action
+
+# F12
+macros += M \{-1073741893} \{-1073741892}
+
+# ctrl-p (messages on Android, largest tap target)
+macros += M \{16} ===auto
+
+macros += M ~ r
+macros += M $ q
+macros += M * V
+
+macros += M ! w
+macros += M % W
+macros += M ( P
+
+macros += M @ %
+macros += M ^ i
+macros += M ) \{6}.\{13}
+
+macros += M # '
+macros += M & m
+macros += M _ X
+
+macros += M a @
+macros += M 5 .
+macros += M + G
+
+macros += M 0 y
+macros += K 0 \{13}
+macros += K1 0 \{13}
+macros += K2 0 \{13}
+macros += K3 0 \{13}
+macros += K4 0 \{13}
+
+{
+  -- Single button to "activate" stairs, altars, portals, shops and hatches.
+  -- If items are present, grab them, otherwise wait one turn.
+  function action()
+    local feature = view.feature_at(0, 0)
+    local realItems = {}
+    local things = items.get_items_at(0, 0)
+    if things then
+      for index,thing in ipairs(things)
+      do
+        if thing.has_skeleton == false then
+          table.insert(realItems, thing)
+        end
+      end
+    end
+    if table.getn(realItems) > 0 then
+      crawl.sendkeys('g')
+    elseif string.find(feature, "stairs_down_") then
+      crawl.sendkeys('>')
+    elseif string.find(feature, "hatch_") then
+      crawl.sendkeys('>')
+    elseif string.find(feature, "enter_") then
+      crawl.sendkeys('>')
+    elseif string.find(feature, "altar_") then
+      crawl.sendkeys('>')
+    elseif string.find(feature, "stairs_up_") then
+      crawl.sendkeys('<')
+    elseif string.find(feature, "exit_") then
+      crawl.sendkeys('<')
+    elseif string.find(feature, "return_") then
+      crawl.sendkeys('<')
+    else
+      crawl.sendkeys('.')
+    end
+  end
+
+  function getMonsterList()
+    local monsters = {}
+    for x = -7,7 do
+      for y = -7,7 do
+        m = monster.get_monster_at(x, y)
+        local attitude_hostile = 0
+        if m and (m:attitude() == attitude_hostile) and not (m:is_firewood()) then
+          desc = m:desc()
+          if (monsters[desc] == nil) then
+            monsters[desc] = 1
+          else
+            monsters[desc] = monsters[desc] + 1
+          end
+        end
+      end
+    end
+    return monsters
+  end
+
+  -- If enemy in LOS then auto-attack, otherwise auto-explore
+  function auto() 
+    local first_monster = next(getMonsterList())
+    if (first_monster) then
+      crawl.sendkeys('\9')
+    else
+      crawl.sendkeys('o')
+    end
+  end
+}
