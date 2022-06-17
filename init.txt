@@ -43,7 +43,7 @@ default_manual_training = true
 # ----------
 autoinscribe +=  robe:ac 2
 autoinscribe +=  animal skin:ac 2
-autoinscribe +=  (?<!troll) leather armour:ac 3
+autoinscribe +=  [\+|\-][0-9] leather armour:ac 3
 autoinscribe +=  troll leather armour:ac 4
 autoinscribe +=  ring mail:ac 5
 autoinscribe +=  steam dragon scales:ac 5
@@ -54,7 +54,7 @@ autoinscribe +=  chain mail:ac 8
 autoinscribe +=  fire dragon scales:ac 8
 autoinscribe +=  ice dragon scales:ac 9
 autoinscribe +=  quicksilver dragon scales:ac 9
-autoinscribe +=  (?<!crystal) plate armour:ac 10
+autoinscribe +=  [\+|\-][0-9] plate armour:ac 10
 autoinscribe +=  pearl dragon scales:ac 10
 autoinscribe +=  shadow dragon scales:ac 10
 autoinscribe +=  storm dragon scales:ac 10
@@ -108,10 +108,10 @@ autoinscribe +=  executioner:dmg 18
 
 # Autoinscribe maces & flails
 # ----------
-autoinscribe +=  (?<![giant|spiked]) club:dmg 5
-autoinscribe +=  (?<!demon) whip:dmg 6
-autoinscribe +=  (?<!great) mace:dmg 8
-autoinscribe +=  (?<!dire) flail:dmg 10
+autoinscribe +=  [\+|\-][0-9] club:dmg 5
+autoinscribe +=  [\+|\-][0-9] whip:dmg 6
+autoinscribe +=  [\+|\-][0-9] mace:dmg 8
+autoinscribe +=  [\+|\-][0-9] flail:dmg 10
 autoinscribe +=  morningstar:dmg 13
 autoinscribe +=  demon whip:dmg 11
 autoinscribe +=  sacred scourge:dmg 12
@@ -134,7 +134,7 @@ autoinscribe +=  bardiche:dmg 18
 
 # Autoinscribe staves
 # ----------
-autoinscribe +=  (?<!quarter)staff:dmg 5
+autoinscribe +=  staff of:dmg 5
 autoinscribe +=  quarterstaff:dmg 10
 autoinscribe +=  lajatang:dmg 16
 
