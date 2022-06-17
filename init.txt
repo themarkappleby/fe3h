@@ -225,7 +225,6 @@ macros += M 5 .
 macros += M + G
 
 macros += M 0 d
-macros += K 0 \{13}
 macros += K1 0 \{13}
 macros += K2 0 \{13}
 macros += K3 0 \{13}
