@@ -108,10 +108,10 @@ autoinscribe +=  executioner:dmg 18
 
 # Autoinscribe maces & flails
 # ----------
-autoinscribe +=  [\+|\-][0-9] club:dmg 5
-autoinscribe +=  [\+|\-][0-9] whip:dmg 6
-autoinscribe +=  [\+|\-][0-9] mace:dmg 8
-autoinscribe +=  [\+|\-][0-9] flail:dmg 10
+autoinscribe +=  [\+|\-][0-9]\s?(vampiric|antimagic|vorpal|spectral)? club:dmg 5
+autoinscribe +=  [\+|\-][0-9]\s?(vampiric|antimagic|vorpal|spectral)? whip:dmg 6
+autoinscribe +=  [\+|\-][0-9]\s?(vampiric|antimagic|vorpal|spectral)? mace:dmg 8
+autoinscribe +=  [\+|\-][0-9]\s?(vampiric|antimagic|vorpal|spectral)? flail:dmg 10
 autoinscribe +=  morningstar:dmg 13
 autoinscribe +=  demon whip:dmg 11
 autoinscribe +=  sacred scourge:dmg 12
