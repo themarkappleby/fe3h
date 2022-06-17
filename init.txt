@@ -24,7 +24,7 @@ show_travel_trail = true
 autopickup = $?!+"/}
 autopickup_exceptions = <stone, <artefact, <wand
 explore_stop = items,shops,altars,portals,branches,runed_doors
-explore_stop += greedy_pickup_smart,greedy_visited_item_stack
+explore_stop += greedy_visited_item_stack
 runrest_ignore_message ^= it creaks loudly
 
 # Fight settings
